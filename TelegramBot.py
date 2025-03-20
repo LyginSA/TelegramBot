@@ -17,8 +17,8 @@ import subprocess
 load_dotenv()
 
 # Get API keys from environment variables
-TELEGRAM_BOT_TOKEN = os.getenv(7680645796:AAGHvl0xgFg2nkiQTAEHE81oHvqCMVHs5YA)
-YOUTUBE_API_KEY = os.getenv(AIzaSyCEGsG-0CLb_jga0SdrzsE0hO8It_L3zJ4)
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, 
