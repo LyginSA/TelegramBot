@@ -19,6 +19,11 @@ load_dotenv()
 # Get API keys from environment variables
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
+bot = Bot(token=TELEGRAM_BOT_TOKEN)
+dp = Dispatcher()
+
+# Initialize YouTube API with cache_discovery=False
+youtube = build('youtube', 'v3', developerKey=YOUTUBE_API_KEY, cache_discovery=False)
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, 
