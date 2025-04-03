@@ -7,7 +7,7 @@ from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters.command import Command
 from aiogram.types import FSInputFile
 import asyncio
-from moviepy.editor import VideoFileClip
+from moviepy.video.io.VideoFileClip import VideoFileClip
 from youtube_transcript_api import YouTubeTranscriptApi
 from googleapiclient.discovery import build
 import time
